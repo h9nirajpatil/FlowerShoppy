@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,600;1,500&family=Rubik:ital,wght@0,700;0,900;1,400&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css" />
+
+
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><i class="ri-home-heart-fill"></i><span>Flowershopy</span></a>
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#Contact us">Contact Us</a></li>
+        </ul>
+        <div class="main">
+            <a href="#Sigin" class="user"><i class="ri-user-fill"></i><span>Sign In</span></a>
+            <a href="#">Register</a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+    <div class="login-form" id="Sigin">
+        <form action="">
+            <h1>Login</h1>
+            <div class="content">
+                <div class="input-field">
+                    <input type="email" placeholder="Enter Your Email" autocomplete="nope" />
+                </div>
+                <div class="input-field">
+                    <input type="password" placeholder="Enter Your Password" autocomplete="new-password" />
+                </div>
+                <a href="#" class="link">Forgot Your Password?</a>
+            </div>
+            <div class="action">
+                <button>Register</button>
+                <button>Sign in</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- This line creates a container <div> with the class "container" and an id "Contact us." It is a primary container for the page content. -->
+    <div class="container" id="Contact us">
+        <!-- This line is an <h2> (second-level header) with the class "container-h2-p." It displays the heading "Connect With Us." -->
+        <h2 class="container-h2-p">Connect With Us</h2>
+        <!-- This is a paragraph <p> with the same class as the header. It contains a welcoming message and an invitation to get in touch. -->
+        <p class="container-h2-p">We would love to respond to your quaries and help you succeed. <br> Feel free to get
+            in
+            touch with us</p>
+        <!-- Another <div> with the class "contact-box." It's used to create a box for the contact form and information. -->
+        <div class="contact-box">
+            <!-- This <div> with the class "contact-left" represents the left section of the contact box. -->
+            <div class="contact-left">
+                <!-- An <h3> (third-level header) displaying "Sent your request." It serves as a subheading for the form section. -->
+                <h3>Sent your request</h3>
+                <!-- This is a <form>. It wraps the input fields where users can enter their information. -->
+                <form>
+                    <!-- This <div> with the class "input-row" groups related input elements. -->
+                    <div class="input-row">
+                        <!-- Another <div> with the class "input-group." This is used to group a label and an input field together. -->
+                        <div class="input-group">
+                            <!-- A <label> for the name input field. -->
+                            <label>Name</label>
+                            <!-- An <input> field for entering a name. It has a default value or placeholder text "John Amendo." -->
+                            <input type="text" placeholder="John Amendo">
+                        </div>
+                        <!-- This is a <div> element with the class "input-group." It's a container for grouping an input field and its associated label. -->
+                        <div class="input-group">
+                            <!-- <label>Phone</label>: This is a <label> element that describes the input field. It's labeled "Phone," indicating that users are expected to enter their phone number. -->
+                            <label>Phone</label>
+                            <!-- <input type="number" placeholder="9998887771">: This is an <input> element of type "number." It allows users to input numeric values, typically used for phone numbers. The "placeholder" attribute provides a default value of "9998887771" that serves as a visual hint for what should be entered. -->
+                            <input type="number" placeholder="9998887771">
+                        </div>
+                    </div>
+                    <!-- The code continues with another <div> element with the class "input-row." This is used to group multiple "input-group" elements.
+
+Inside the "input-row," there are two "input-group" elements. Each "input-group" consists of a <label> and an <input> element, similarly to the "Phone" field above.
+
+The first "input-group" is for the "Email" input. It uses an <input> of type "email" and provides a placeholder for an example email address.
+
+The second "input-group" is for the "Subject" input, which is of type "text" and provides a placeholder for a subject (e.g., "Product Demo"). -->
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Email</label>
+                            <input type="email" placeholder="johnamendo222@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Product Demo">
+                        </div>
+                    </div>
+                    <!-- <label>Message</label>: This is a label for a text area where users can write a message.
+
+<textarea rows="5" placeholder="Your Message"></textarea>: This is a <textarea> element, which allows users to enter a multi-line text message. It has a "rows" attribute set to "5" to define the initial visible rows, and it also has a placeholder text.
+
+<button class="button-send" type="submit">SEND</button>: This is a "SEND" button that is used to submit the form. It has the class "button-send" for styling and is set as a "submit" button for form submission. -->
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    <button class="button-send" type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <table>
+                    <tr>
+                        <td>Email</td>
+                        <td>contactus@example.com</td>
+                    </tr>
+
+                    <tr>
+                        <td>Phone</td>
+                        <td>+1 012 345 6789</td>
+                    </tr>
+
+                    <tr>
+                        <td>Address</td>
+                        <td>#212, Grounf floor, 7th cross<br>some layout, Some Road, Koromangla <br> Bengaluru 560001
+                        </td>
+                    </tr>
+                </table>
+                <div class="social-media-icon">
+                    <i class="ri-facebook-box-fill"></i>
+                    <i class="ri-twitter-fill"></i>
+                    <i class="ri-instagram-fill"></i>
+                    <i class="ri-snapchat-fill"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js link -->
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://kit.fontawesome.com/cc8282555b.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,360 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-font-smothing: antialiased;
+  text-decoration: none;
+  list-style: none;
+}
+body {
+  background: #222;
+  font-family: "Rubik", sans-serif;
+}
+.login-form {
+  background: #fff;
+  width: 80%;
+  margin: 150px auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  border-radius: 4px;
+  box-shadow: 0 2px 25px rgba(0, 0, 0, 0.2);
+}
+.login-form h1 {
+  padding: 35px 35px 0 35px;
+  font-weight: 300;
+}
+.login-form .content {
+  padding: 35px;
+  text-align: center;
+}
+.login-form .input-field {
+  padding: 12px 5px;
+}
+.login-form .input-field input {
+  font-size: 16px;
+  display: block;
+  font-family: "Rubik", sans-serif;
+  width: 100%;
+  padding: 10px 1px;
+  border: 0;
+  border-bottom: 1px solid #747474;
+  outline: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+.login-form .input-field input::-webkit-input-placeholder {
+  text-transform: uppercase;
+}
+
+.login-form .input-field input::-moz-placeholder {
+  text-transform: uppercase;
+}
+
+.login-form .input-field input:-ms-input-placeholder {
+  text-transform: uppercase;
+}
+
+.login-form .input-field input::-ms-input-placholder {
+  text-transform: uppercase;
+}
+
+.login-form .input-field input::placeholder {
+  text-transform: uppercase;
+}
+.login-form .input-field input:focus {
+  border-color: #222;
+}
+.login-form a.link {
+  text-decoration: none;
+  color: #747474;
+  letter-spacing: 0.2px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin: 20px;
+}
+
+.login-form .action {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+}
+.login-form .action button {
+  width: 100%;
+  border: none;
+  padding: 18px;
+  font-family: "Rubik", sans-serif;
+  cursor: pointer;
+  text-transform: uppercase;
+  background: #e8e9ec;
+  color: #777;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 0;
+  letter-spacing: 0.2px;
+  outline: 0;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.login-form .action button:hover {
+  background: #d8d8d8;
+}
+.login-form .action button:nth-child(2) {
+  background: #2d3b55;
+  color: #fff;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 4px;
+}
+.login-form .action button:nth-child(2):hover {
+  background: #3c4d6d;
+}
+
+/* * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  list-style: none;
+} */
+:root {
+  --bg-color: #222327;
+  --text-color: #fff;
+  --main-color: #29fd53;
+}
+body {
+  min-height: 100vh;
+}
+header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: transparent;
+  padding: 28px 12%;
+  transition: all 0.5s ease;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 3px;
+}
+.logo span {
+  color: var(--text-color);
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.navbar {
+  display: flex;
+}
+.navbar a {
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  padding: 5px 0;
+  margin: 0px 30px;
+  transition: all 0.5s ease;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.navbar a.active {
+  color: var(--main-color);
+}
+.main {
+  display: flex;
+  align-items: center;
+}
+.main a {
+  margin-right: 25px;
+  margin-left: 10px;
+  color: var(--text-color);
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: all 0.5s ease;
+}
+.user {
+  display: flex;
+  align-items: center;
+}
+.user i {
+  color: var(--main-color);
+  font-size: 28px;
+  margin-right: 7px;
+}
+.main a:hover {
+  color: var(--main-color);
+}
+#menu-icon {
+  font-size: 35px;
+  color: var(--text-color);
+  cursor: pointer;
+  z-index: 10001;
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  header {
+    padding: 14px 2%;
+    transition: 0.2s;
+  }
+  .navbar a {
+    padding: 5px 0;
+    margin: 0px 20px;
+  }
+}
+
+@media (max-width: 1090px) {
+  #menu-icon {
+    display: block;
+  }
+  .navbar {
+    position: absolute;
+    top: 100%;
+    right: -100%;
+    width: 300px;
+    height: 32vh;
+    background: var(--main-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+  }
+  .navbar a {
+    display: block;
+    margin: 12px 0px;
+    padding: 0px 25px;
+    transition: all 0.5s ease;
+  }
+  .navbar a:hover {
+    color: var(--text-color);
+    transform: translateY(5px);
+  }
+  .navbar a:active {
+    color: var(--text-color);
+  }
+  .navbar.open {
+    right: 2%;
+  }
+}
+/* contact us css */
+/* The .container class sets the width of an element to 80% of its parent's width, creating a responsive design. It also adds a 50-pixel margin at the top and bottom and centers the element horizontally using auto. */
+.container {
+  width: 80%;
+  margin: 50px auto;
+}
+/* The .container-h2-p class changes the text color to white (#fff) and adds a 15-pixel margin around the element, giving it spacing. */
+.container-h2-p {
+  color: #fff;
+  margin: 15px;
+}
+/* The .contact-box class sets the background color to white (#fff) and uses the flex property to create a flexible layout for its children, allowing them to be arranged horizontally. */
+.contact-box {
+  background: #fff;
+  display: flex;
+}
+/* The .contact-left class is part of the flex layout. It specifies that this section should occupy 60% of the available space. It also adds padding of 40 pixels on top and bottom, and 60 pixels on the left and right. */
+.contact-left {
+  flex-basis: 60%;
+  padding: 40px 60px;
+}
+/* The .contact-right class specifies that this section should occupy 40% of the available space in the flex layout. It adds the same padding as the left section and sets the background to a dark blue (#3c4d6d) and text color to white. */
+.contact-right {
+  flex-basis: 40%;
+  padding: 40px 60px;
+  background: #3c4d6d;
+  color: #fff;
+}
+/* The .input-row class creates rows for input elements. It uses flex to arrange them horizontally, justify-content: space-between to evenly space them, and adds a 20-pixel margin at the bottom of each row. */
+.input-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+/* The .input-row .input-group class further specifies the layout. Each input group within a row occupies 45% of the available space, allowing two groups side by side in each row. */
+.input-row .input-group {
+  flex-basis: 45%;
+}
+/* The input selector targets all input elements. It sets their width to 100% to span the full container width, removes the default border, adds a 1-pixel solid bottom border, removes the outline when focused, and adds 5 pixels of padding at the bottom. */
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid#ccc;
+  outline: none;
+  padding-bottom: 5px;
+}
+/* The textarea selector targets text areas. It behaves similarly to input fields but includes a 10-pixel padding and uses box-sizing: border-box to include padding and border within the specified width. */
+textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 10px;
+  box-sizing: border-box;
+}
+/* The label selector styles labels. It adds a 6-pixel margin at the bottom, sets them to display as block elements, and changes the text color to a dark blue (#3c4d6d). */
+label {
+  margin-bottom: 6px;
+  display: block;
+  color: #3c4d6d;
+}
+/* The .button-send class styles the "SEND" button. It sets the background color to the same dark blue, adjusts the button width and height, removes the border and outline, changes the text color to white, adds a border-radius for a rounded shape, adds margin, and applies a subtle box shadow for a hover effect. */
+.button-send {
+  background: #3c4d6d;
+  width: 100px;
+  border: none;
+  outline: none;
+  color: #fff;
+  height: 35px;
+  border-radius: 30px;
+  margin: 20px;
+  box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+}
+/* The .button-send:hover class defines styles for when the button is hovered over. It changes the background color to a bright green, the text color to a darker color, and adds a different box shadow for a hover effect. */
+.button-send:hover {
+  background-color: #29fd53;
+  color: #222;
+  box-shadow: 0px 5px 15px 0px rgba(71, 184, 15, 0.3);
+}
+/* The .contact-left h3 selector targets the <h3> element within the "contact-left" section. It changes the text color to dark blue, sets the font weight to bold, and adds a 30-pixel margin at the bottom. */
+.contact-left h3 {
+  color: #3c4d6d;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/* The .contact-right h3 selector targets the <h3> element within the "contact-right" section. It sets the font weight to bold and adds a 30-pixel margin at the bottom. */
+.contact-right h3 {
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+/* These selectors target table rows and table data cells within the contact information table. The first rule adds padding on the right side of the first cell in each row, and the second rule adds padding on the top of all cells. */
+tr td:first-child {
+  padding-right: 20px;
+}
+tr td {
+  padding-top: 20px;
+}
+/* The .social-media-icon class targets a container for social media icons. It adds a margin of 60 pixels around the icons. */
+.social-media-icon {
+  margin: 60px;
+}
+/* The .social-media-icon i selector targets the individual icons within the social media container. It adds a margin of 15 pixels on the left and right of each icon and sets the font size to 50 pixels. */
+.social-media-icon i {
+  margin: 0px 15px;
+  font-size: 50px;
+}
+/* The .social-media-icon i:hover selector styles the icons when they are hovered over. It changes the color of the icons to a bright green (#29fd53) on hover. */
+.social-media-icon i:hover {
+  color: #29fd53;
+}
